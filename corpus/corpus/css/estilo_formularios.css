@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#contenedor{
+    width: 1400px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.imagen1 {
+    width: 150px;
+    height: 150px;
+
+}
+
+body{
+    background-color: #e6e6e6ff;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: #2bc4e1ff;
+    width: 1400px;
+    height: 150px;
+}
+
+h1{
+    color: #f6fafbff;
+    display: inline-block;
+    font: 800 75px sans-serif;
+    margin-left: auto;
+    margin-right: auto;   
+}
+aside h2{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font: 600 30px sans-serif;
+}
+
+nav{
+    text-align: left;
+    background-color: #e6eef8ff;
+}
+nav li{
+    display: inline-block;
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 5px;
+    font: 600 20px sans-serif;
+}
+
+nav ul a{
+    color: #177b64ff;
+    text-decoration: none;
+}
+
+nav h4{
+    width: 1100px;
+    text-align: right;
+    color: #177b64ff;
+    display: inline-block;
+    font: 600 20px sans-serif;
+
+}
+
+main{
+    display: flex;
+    
+}
+
+aside{
+    border: 1px solid #7e959bff;
+    width: 500px;
+    height: 600px;
+    background-color:#98d6d7ff; 
+}
+section{
+    width: 900px;
+    height: 600px;
+    background-color: #e6eef8ff;
+}
+
+footer{
+    text-align: center;
+    height: 100px;
+    background-color: #e6eef8ff;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li{
+    display: inline-block;
+    margin-right: 80px;
+}
+
+.piePagina{
+    color: #177b64ff;
+    font: 400 20px sans-serif;
+    margin-top: 38px;
+    margin-bottom: 40px;
+}
+
+.atext{
+    font: 600 25px sans-serif;
+    text-decoration: none;
+    color: #177b64ff;
+}
+
+.pbxtext{
+    text-align: left;
+    font: 400 20px sans-serif;
+    color: #177b64ff;
+
+}
+
+.formIngreso{
+    font: 400 25px sans-serif;
+    color: #177b64ff;
+}
+
+.formIngreso input {
+    font: 400 20px sans-serif;
+    background-color: transparent;
+    border: 2px solid #7e959bff;
+}
+
+.formIngreso input::placeholder {
+    color: #177b64ff;
+    text-align: center;
+}
+
+.formIngreso ul p{
+    text-align: center;
+    margin-left: 30px;
+}
+
+
+.formIngreso p{
+    margin-top: 20px;
+    margin-left: 130px;
+}
+
+.formIngreso a{
+    font: 600 20px sans-serif;
+    color:#e6eef8ff; 
+}
+
+.primero{
+    margin-left: 41px;
+}
+
+aside button{
+    width: 200px;
+    margin-left: 150px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    size: 40px;
+    font: 600 20px sans-serif;
+    color:#e6eef8ff; 
+    background-color: #35907cff;
+    padding: 10px;
+    border-radius: 50px;
+    border: 2px solid #7e959bff;
+    box-shadow: 8px 10px 30px #666;
+}
+
+header, main, nav, footer{
+    border: 2px solid #7e959bff;
+}
+
+/*_____________________________________________Main____________________________________________________________________*/
+
+.sectionMain h2{
+    text-align: center;
+    font: 600 30px sans-serif; 
+    color: #177b64ff;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.sectionMain p {
+    color: #177b64ff;
+    margin-left: 60px;
+    font: 400 25px sans-serif; 
+}
+
+.sectionMain ul{
+
+    margin-top: 80px;
+    list-style: none;
+    display: inline-block;
+    width: 300px;
+}
+
+.sectionMain li{
+    padding-top: 20px;
+}
+.sectionMain img {
+    padding-top: 30px;
+    margin-left: 60px;
+    width: 250px;
+    height: 250px;
+}
+
+/*_____________________________________________Quienes somos____________________________________________________________________*/
+
+.sectionQuienes {
+    color: #177b64ff;
+    font: 400 20px sans-serif;
+}
+
+.sectionQuienes h2 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font: 600 25px sans-serif;
+}
+
+.sectionQuienes p ,h3{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+/*________________________________________________Sedes____________________________________________________________________*/
+
+.img1{
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 315px;
+    height: 150px
+}
+
+.textBogota{
+    text-align: center;
+    font: 400 20px sans-serif;
+    color: #177b64ff;
+}
+
+.img2{
+    display: inline-block;
+    float: left;
+    margin-left: 100px;
+    margin-top: 20px;
+    width: 250px;
+    height: 120px
+}
+.img3{
+    display: inline-block;
+    margin-right: 100px;
+    float: right;
+    margin-top: 20px;
+    width: 250px;
+    height: 120px
+}
+
+.texto{
+    display: inline-block;
+    margin-left: 140px;
+    padding-left: 40px;
+    width: 300px;
+    margin-top: 10px;
+    font: 600 20px sans-serif;
+    color: #177b64ff;
+}
+
+.sectionSedes h2{
+    margin-top: 10px;
+    text-align: center;
+    font: 800 20px sans-serif;
+    color: #177b64ff;
+}
+
+/*________________________________________________Especialistas____________________________________________________________________*/
+
+.descripcion{
+    display: inline-block;
+    width: 150px;
+    margin:20px;
+    font: 600 20px sans-serif;
+    color: #177b64ff;
+}
+
+.sectionEspecialistas img{
+    border-radius: 40px;
+    border: 2px solid #7e959bff; 
+    width: 150px;
+    height: 185px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sectionEspecialistas div{
+    display: flex;
+    margin-left: 50px;
+    margin-top: 80px;
+    align-items: center;
+    width: 800px;
+    height: 180px;
+}
+
+/*________________________________________________Contactenos____________________________________________________________________*/
+
+.tcontacto{
+    margin-top: 30px;
+    text-align: center;
+    font: 600 25px sans-serif;
+    color: #177b64ff;
+}
+
+.formContacto{
+    margin-left: 40px;
+    align-items: center;
+    display: flex;
+    width: 800px;
+}
+
+.formContacto ul{
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 40px;
+    align-items: center;
+    display: flex;
+    width: 600px;
+    height: 500px;
+}
+
+.text{
+    margin-left: 10 px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font: 600 20px sans-serif;
+    color: #177b64ff;
+}
+
+.formContacto ul textarea{
+    margin-left: 30px;
+    height: 100px;
+    width: 400px;
+}
+
+
+.entrada{
+    height: 25px;
+    margin-left: 40px;
+    width: 400px;
+}
+.radio{
+    margin-left: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font: 600 20px sans-serif;
+    color: #177b64ff;
+}
+
+.radio input{
+   transform: scale(1.5);
+}
+
+.formContacto ul button{
+    width: 150px;
+    margin-left: 260px;
+    margin-bottom: 40px;
+    size: 40px;
+    font: 600 20px sans-serif;
+    color:#e6eef8ff; 
+    background-color: #35907cff;
+    padding: 10px;
+    border-radius: 50px;
+    border: 2px solid #7e959bff;
+    box-shadow: 8px 10px 30px #666;
+}
+
+/*________________________________________________Modulo registro____________________________________________________________________*/
+
+.mainRegistro{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #e6eef8ff;
+}
+
+.moduloregistroh2 {
+    width: 1400px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font: 600 20px sans-serif;
+    color: #177b64ff;
+}
+
+.mainRegistro ul{
+    flex-wrap: wrap;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -5px;
+    width: 450px;
+    height: 550px;
+    background-color: #0195b4ff;
+    border: 2px solid #7e959bff;
+}
+
+.mainRegistro form{
+    display: flex;
+    margin-left: -4px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: -5px;
+    width: 950px;
+    height: 550px;
+    background-color: #e6eef8ff;
+    border: 2px solid #7e959bff;
+}
+.mainRegistro li p{
+    display: inline-block;
+    width: 210px;
+    font: 600 20px sans-serif;
+    color:#e6eef8ff;
+}
+
+.mainRegistro li{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 2px;
+    justify-content: center;
+    flex-grow: 1;
+    border: 2px solid #f6fafbff;
+}
+
+.mainRegistro form p{
+    display: flex;
+    margin-left: 40px;
+    font: 600 20px sans-serif;
+    width: 350px;
+    color: #177b64ff;
+}
+
+.mainRegistro form select,.input{
+    width: 250px;
+}
+
+.mainRegistro form button{
+    width: 200px;
+    margin-left: 30px;
+    font: 600 20px sans-serif;
+    color:#e6eef8ff; 
+    background-color: #35907cff;
+    padding: 10px;
+    border-radius: 50px;
+    border: 2px solid #7e959bff;
+    box-shadow: 8px 10px 30px #666;
+}
+
+.mainRegistro h3{
+    width: 600px;
+    font: 600 20px sans-serif;
+    color:#177b64ff;
+}
+.mainRegistro h3 input{
+    transform: scale(1.4);
+    margin-right: 10px;
+    margin-left: 15px;
+}
+
