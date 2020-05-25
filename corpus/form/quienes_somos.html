@@ -1,56 +1,68 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
-    <head>
-        <title>Quienes somos</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="Stylesheet" type="text/css" href="../css/estilo.css">
-    </head>
-    <body>
-        <header class="primeroE">
-                    <img src="../img/logo.png" alt="logotipo">
-                    <p>CLINICA CORPUS CHRISTI</p>
-        </header>
-       <header class="segundoe">
-           <a href="../index.html"><div id="boton1" class="redes">Inicio</div></a>
-            <a href="#"><div id="boton2" class="redes">Quiénes somos</div></a>
-            <a href="nuestras_sedes.html"><div id="boton3" class="redes">Nuestras sedes</div></a>
-            <a href="nuestros_especialistas.html"><div id="boton4" class="redes">Especialistas</div></a>
-       </header>
-       <main>
-           <aside id="derecha">
-               <form action="../ingreso.php" method="POST" class="ingres">
-                    <h1 class="titul">Ingreso usuario</h1>
-                    <input type="Text" id= "usuario" name="usuario" placeholder="&#128272; Usuario" required="">
-                    <input type="password" id= "clave" name="clave" placeholder="&#128272; password" required="">
-                    <input type="submit" value="ingresar">
-                    <input type="submit" value="Registrar">
-   </form>
-           </aside>
-           <aside id="izquierda">
-            <h2 class="relato">Quienes Somos</h2>
-               <form class="mision">
 
-                   
-                   <h1 class="misi">Mision</h1>
-                   <p class="datos">Nuestro compromiso con la excelencia en la prestacion de los servicios medicos..</p>
+<head>
+	<title>Quienes somos</title>
+	<meta charset="UTF-8">
+	<link rel="Stylesheet" type="text/css" href="../css/estilo.css">
+</head>
 
-                   <h1 class="misi">Visión</h1>
-                   <p class="datos">Mantenernos como la primera</p>
+<body>
 
-                   <h1 class="misi">Valores</h1>
-                   <p class="datos">Responsabilidad</p>
-                   <p class="datos">Etica</p>
-                   <p class="datos">Honestidad</p>
+	<div id = "contenedor">
 
-               </form>
-           </aside>
-       </main>
-       
-      </body>
+		<header>
+			<img class="imagen1" src="../img/logo.png">
+			<h1>CLÍNICA CORPUS CHRISTI</h1>
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="quienes_somos.html">Quiénes somos</a></li>
+				<li><a href="nuestras_sedes.html">Nuestras sedes</a></li>
+				<li><a href="nuestros_especialistas.html">Especialistas</a></li>
+			</ul>
+		</nav>
+
+		<main>
+
+			<section class="sectionQuienes">
+				<h2>Quiénes somos</h2>
+				<h3>Misión</h3>
+				<p>Satisfacer todas las necesidades médicas de nuestros clientes con los más altos estandares de calidad.</p>
+				<h3>Visión</h3>
+				<p>Posicionarnos como empresa lider en el sector salud.</p>
+				<h3>Valores</h3>
+				<p>Responsabilidad <br><br> Ética<br><br> Responsabilidad</p>
+			</section>
+
+			<aside>
+				<form class="formIngreso" action="../ingreso.php" method="POST">
+					<h2>Ingreso Usuario</h2>
+					<ul>
+						<p >Usuario <input class="primero" type="text" placeholder="Documento" name="usuario"></p>
+						<p>Contraseña <input type="password" placeholder="Contraseña" name="clave"></p>
+					</ul>
+					<button>Ingresar</button>
+					<p>Olvidó su contraseña</p>
+					<button>Registrarse</button>
+				</form>
+			</aside>
+
+		</main>
+
+		<footer>
+			<ul>
+				<li class="piePagina"><p>Vigilado por supersalud &nbsp&nbsp 
+				© Corpus Christi - todos los derechos reservados</p></li>
+				<li class="pbxtext"><p>PBX: 3115381804 <br>PBX: 018000 123456</p></li>
+				<li><a href="contactenos.html" class="atext">Contáctenos</a></li>
+			</ul>
+		</footer>
+
+	</div>
+
+</body>
+
 </html>

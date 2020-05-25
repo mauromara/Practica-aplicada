@@ -1,42 +1,61 @@
+<?php 
+
+  session_start();
+  error_reporting(0);
+  
+?>
+
+<?php
+    require('conexion.php');
+    $query = "SELECT id_sede, nombre_sede FROM sedes";
+    $resultado= $mysqli->query($query);
+ ?>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
-    <head>
-        <title>Administrador</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="Stylesheet" type="text/css" href="../css/estilo_formularios.css">
-    </head>
-    <body>
-        <header class="primeroE">
-                    <img src="../img/logo.png" alt="logotipo">
-                    <p>CLINICA CORPUS CHRISTI</p>
-        </header>
-       <header class="segundoe">
-           <a href="../salir.php"><div id="boton1" class="redes">Cerrar</div></a>
-       </header>
-       <main>
-           <aside id="derecha">
-               <form action="validar.php" method="POST" class="ingres">
-                    <h1 class="titul">Administrar Plataforma</h1>
-                    
-              </form>
-           </aside>
-           <aside id="izquierda">
-            <h2 class="relato">Administrador</h2>
-               <form class="mision">
+<head>
+	<title>Administrador</title>
+	<meta charset="UTF-8">
+	<link rel="Stylesheet" type="text/css" href="../css/estilo_formularios.css">
+</head>
+<body>
+	<div id = "contenedor">
 
-                   
-                   <h1 class="misi">Administrador</h1>
-                   
+		<header>
+			<img class="imagen1" src="../img/logo.png">
+			<h1>CLÍNICA CORPUS CHRISTI</h1>
+		</header>
 
-               </form>
-           </aside>
-       </main>
-       
-      </body>
+		<nav>
+			<ul>
+				<li><a href="../salir.php"><div id="boton1" class="redes">Cerrar</div></a></li>
+				<li><h4 id="boton2"> bienvenido : <?php echo $_SESSION['correo'];?></h4></li>
+			</ul>
+		</nav>
+
+		<main class="mainRegistro">
+			<h2 class="moduloregistroh2">Módulo Administrador</h2>
+			<ul>
+				<li><p>Editar Perfil</p><img src="../img/paciente.png"></li>
+				<li><p>Consultar Agenda</p><img src="../img/profesional.png"></li>
+				<li><p>Servicios más solicitados</p><img src="../img/administrador.png"></li>
+				<li><p>Medico mas consultado</p><img src="../img/administrador.png"></li>
+				<li><p>Paciente frecuente</p><img src="../img/administrador.png"></li>
+			</ul>
+			<form>
+				
+				
+			</form>
+		</main>
+
+		<footer>
+			<ul>
+				<li class="piePagina"><p>Vigilado por supersalud &nbsp&nbsp 
+				© Corpus Christi - todos los derechos reservados</p></li>
+				<li class="pbxtext"><p>PBX: 3115381804 <br>PBX: 018000 123456</p></li>
+				<li><a href="contactenos.html" class="atext">Contáctenos</a></li>
+			</ul>
+		</footer>
+
+	</div>
+</body>
 </html>

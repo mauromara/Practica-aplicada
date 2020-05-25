@@ -32,7 +32,7 @@ $_SESSION['id_usuario'] = $row['id_usuario'];
 			header("location: /corpus/form/profesional.php");
 			break;
 		default:
-			echo "Error en la autenticacion";
+			echo "<script>alert('Error en usuario o contraseña'); location.href = 'index.html'</script>";
 	}
 	mysqli_free_result($resultado);
 	mysql_close($conexion);

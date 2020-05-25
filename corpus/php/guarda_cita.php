@@ -3,12 +3,12 @@
   $mysqli=new mysqli("localhost","root","Savcoinc1.","olgasant_corpusc");
 
   
-  $usuario= $_POST['usuario'];
-  $sede= $_POST['sede'];
-  $fecha_agenda= $_POST['fecha_agen'];
-  $hora_agenda= $_POST['hora_agen'];
+  $agenda= $_POST['id_agenda'];
+  $sede= $_POST['id_sede'];
+  $fecha_agenda= $_POST['fecha_agenda'];
+  $hora_agenda= $_POST['hora_agenda'];
   
-  $insertar = "INSERT INTO agenda (id_usuario, id_profesional, fecha_agenda, hora_agenda, id_sede) VALUES ('$usuario','$usuario', '$fecha_agenda', '$hora_agenda', '$sede')";
+  $insertar = "INSERT INTO citas (id_usuario_genera, id_profesional, fecha_cita, hora_cita, id_sede) VALUES ('$usuario','$usuario', '$fecha_agenda', '$hora_agenda', '$sede')";
   $resultado= $mysqli-> query($insertar);
 
   if($resultado){
