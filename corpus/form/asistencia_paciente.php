@@ -4,16 +4,15 @@
   error_reporting(0);
   
 ?>
-
 <?php
-    require('conexion.php');
-    $query = "SELECT id_sede, nombre_sede FROM sedes";
-    $resultado= $mysqli->query($query);
- ?>
+    include 'conexion.php';
+    $query1=mysqli_query($mysqli,"SELECT usuarios, nombres FROM 07_analistas");
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Administrador</title>
+	<title>profesionales</title>
 	<meta charset="UTF-8">
 	<link rel="Stylesheet" type="text/css" href="../css/estilo_formularios.css">
 </head>
@@ -33,18 +32,17 @@
 		</nav>
 
 		<main class="mainRegistro">
-			<h2 class="moduloregistroh2">Módulo Paciente</h2>
+			<h2 class="moduloregistroh2">Módulo Profesional de la salud</h2>
 			<ul>
-				<li><a href="#"><p>Editar Perfil</p></a><img src="../img/editar.png"></li>
-				<li><a href="programar_cita.php"><p>Programar Cita</p></a><img src="../img/calendario.png"></li>
-				<li><a href="cancelar_cita.php"><p>Cancelar Cita</p></a><img src="../img/cancelar.png"></li>
-				<li><a href="historial_citas.php"><p>Historial de Citas</p></a><img src="../img/historia.png"></li>
-				<li><a href="#"><p>Proximas citas</p></a><img src="../img/proximas.png"></li>
+				<li><a href="agenda_profesional.php"><p>Generar Agenda</p></a><img src="../img/paciente.png"></li>
+				<li><a href="consulta_agenda_prof.php"><p>Consultar Agenda</p></a><img src="../img/profesional.png"></li>
+				<li><a href="#"><p>Asistencia paciente</p></a><img src="../img/administrador.png"></li>
+				
 			</ul>
-			<form>
+			<form action= "" method="POST" class="mision">
 				
-				
-			</form>
+                  
+               </form>
 		</main>
 
 		<footer>

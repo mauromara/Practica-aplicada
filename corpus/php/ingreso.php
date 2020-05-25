@@ -30,7 +30,7 @@ $_SESSION['nombres'] = $row['nombres'];
 			header("location: /unificado/facturacion/menu/index-aut.php");
 			break;
 		default:
-			echo "Error en la autenticacion";
+			echo "<script>alert('Error en el logue del usuario'); location.href = 'index.html'</script>";
 	}
 	mysqli_free_result($resultado);
 	mysql_close($conexion);

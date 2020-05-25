@@ -8,40 +8,52 @@
     include 'conexion.php';
     $query1=mysqli_query($mysqli,"SELECT usuarios, nombres FROM 07_analistas");
 ?>
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Profesionales</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="Stylesheet" type="text/css" href="../css/estilo_formularios.css">
-    </head>
-    <body>
-        <header class="primeroE">
-                    <img src="../img/logo.png" alt="logotipo">
-                    <p>CLINICA CORPUS CHRISTI</p>
-        </header>
-       <header class="segundoe">
-           <a href="../salir.php"><div id="boton1" class="redes">Cerrar</div></a>
-           <h4 id="boton2"> bienvenido : <?php echo $_SESSION['correo'];?></h4>
-       </header>
-       <main>
-           <aside id="derecha">
-               <form action="validar.php" method="POST" class="ingres">
-                    <h1 class="titul">Menu Profesionales</h1>
-                    <a href="/corpus/form/agenda_profesional.php"><div>Generar agenda</div></a>
-                    <a href="/corpus/form/consulta_agenda_prof.php"><div>Consultar Agenda</div></a>
-                    <a href="#"><div>Asistencia paciente</div></a>
-              </form>
-           </aside>
-           <aside id="izquierda">
-            <h2 class="relato">Modulo profesionales</h2>
-               <form class="mision">
+<head>
+	<title>profesionales</title>
+	<meta charset="UTF-8">
+	<link rel="Stylesheet" type="text/css" href="../css/estilo_formularios.css">
+</head>
+<body>
+	<div id = "contenedor">
 
+		<header>
+			<img class="imagen1" src="../img/logo.png">
+			<h1>CLÍNICA CORPUS CHRISTI</h1>
+		</header>
 
+		<nav>
+			<ul>
+				<li><a href="../salir.php"><div id="boton1" class="redes">Cerrar</div></a></li>
+				<li><h4 id="boton2"> bienvenido : <?php echo $_SESSION['correo'];?></h4></li>
+			</ul>
+		</nav>
+
+		<main class="mainRegistro">
+			<h2 class="moduloregistroh2">Módulo Profesional de la salud</h2>
+			<ul>
+				<li><a href="agenda_profesional.php"><p>Generar Agenda</p></a><img src="../img/paciente.png"></li>
+				<li><a href="consulta_agenda_prof.php"><p>Consultar Agenda</p></a><img src="../img/calendario.png"></li>
+				<li><a href="asistencia_paciente.php"><p>Asistencia paciente</p></a><img src="../img/asistencia.png"></li>
+				
+			</ul>
+			<form action= "" method="POST" class="mision">
+				
+                  
                </form>
-           </aside>
-       </main>
-       
-      </body>
+		</main>
+
+		<footer>
+			<ul>
+				<li class="piePagina"><p>Vigilado por supersalud &nbsp&nbsp 
+				© Corpus Christi - todos los derechos reservados</p></li>
+				<li class="pbxtext"><p>PBX: 3115381804 <br>PBX: 018000 123456</p></li>
+				<li><a href="contactenos.html" class="atext">Contáctenos</a></li>
+			</ul>
+		</footer>
+
+	</div>
+</body>
 </html>
